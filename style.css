@@ -1,0 +1,134 @@
+body {
+  background-color: rgb(213, 189, 189);
+}
+
+.header {
+  max-width: 1100px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  background-color: #fff;
+  padding: 92px 50px;
+  margin: auto;
+}
+
+.header__link-list {
+  display: flex;
+  column-gap: 27px;
+  list-style-position: inside;
+}
+
+.header__links-list-item {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  list-style: none;
+  list-style-image: url('images/list_marker.svg');
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link_active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  padding-left: 6.5px;
+}
+
+.header__address {
+  display: flex;
+  flex-direction: column;
+  max-width: 240px;
+  justify-self: end;
+  align-items: flex-start;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  text-underline-offset: 4px;
+  line-height: 24px;
+}
+
+.cover {
+  position: relative;
+  background-image: url(images/lotus-flower.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1100px;
+  min-height: 757px;
+  margin: auto;
+  z-index: 0;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 165px 50px 0px 50px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 100px;
+  letter-spacing: 30px;
+  color: #fff;
+  line-height: 100%;
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+.no-spacing {
+  letter-spacing: 0px;
+}
+
+.aligned-text {
+  line-height: 115%;
+}
+
+.aligned-text_center {
+  align-self: center;
+}
+
+.aligned-text_right {
+  align-self: flex-end;
+}
+
+.cover__description {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 106px 50px 50px;
+  gap: 107px;
+}
+.cover__description-text {
+  display: inline;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #fff;
+  word-spacing: 18px;
+}
+
+.bet-button {
+border: 1px solid #fff;
+background-color: transparent;
+width: 256px;
+height: 51px;
+font-family: 'Raleway', sans-serif;
+font-weight: 500;
+line-height: 52px;
+font-size: 22px;
+color: #fff;
+text-transform: uppercase;
+}
