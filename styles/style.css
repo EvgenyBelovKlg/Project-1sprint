@@ -120,14 +120,104 @@
 }
 
 .bet-button {
-border: 1px solid #fff;
-background-color: transparent;
-width: 256px;
-height: 51px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  width: 256px;
+  height: 51px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  line-height: 52px;
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.lots {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.lots__heading {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; 
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 1;
+  padding-top: 183px;
+  padding-left: 64px;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: flex-start;
+  margin-left: 24px;
+  padding-top: 29px;
+}
+
+.lots__card-list-item {
+  min-height: 596px;
+  max-width: 334px; 
+  flex-grow: 1;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.card_type_film {
+  background-image: url('../images/card_type_film.jpg');
+}
+
+.card_type_book {
+  background-image: url('../images/card_type_book.jpg');
+}
+.card_type_picture {
+  background-image: url('../images/card_type_picture.jpg');
+}
+
+.card__title {
 font-family: 'Raleway', sans-serif;
-font-weight: 500;
-line-height: 52px;
+font-weight: 700; 
 font-size: 22px;
-color: #fff;
+text-decoration: underline;
 text-transform: uppercase;
+line-height: 120%; 
+color: #fff;
+}
+
+.card__text {
+font-family: 'Raleway', sans-serif;
+font-weight: 400; 
+font-size: 20px;
+line-height: 120%; 
+color: #fff;  
+}
+
+.link_more {
+display: block;
+font-family: 'Raleway', sans-serif;
+font-weight: 400; 
+font-size: 20px;
+line-height: 120%; 
+color: #000;
+text-underline-offset: 4px;
+padding-top: 30px;
+padding-left: 64px;
 }
